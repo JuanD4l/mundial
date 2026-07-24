@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas - FIFA World Cup 2026</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">FIFA WORLD CUP 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grupos.html">Grupos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="calendario.html">Calendario</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/op2.html/esta.html">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/op2.html/noti.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-5">Estadísticas del Mundial 2026</h1>
+
+<ul class="nav nav-tabs mb-4" id="statsTabs">
+    <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#goleadores">Goleadores</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#asistentes">Asistentes</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#porteros">Porteros</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#tarjetas">Tarjetas</a></li>
+    <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#ranking">Ranking FIFA</a></li>
+</ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="goleadores">
+                <table class="table table-hover" id="tabla-goleadores">
+                    <thead class="table-dark"><tr><th>Pos</th><th>Jugador</th><th>Selección</th><th>Goles</th><th>Partidos</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="asistentes">
+                <table class="table table-hover" id="tabla-asistentes">
+                    <thead class="table-dark"><tr><th>Pos</th><th>Jugador</th><th>Selección</th><th>Asistencias</th><th>Partidos</th></tr></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <!-- Porteros -->
+<div class="tab-pane fade" id="porteros">
+    <table class="table table-hover" id="tabla-porteros">
+        <thead class="table-dark">
+            <tr>
+                <th>Pos</th>
+                <th>Portero</th>
+                <th>Selección</th>
+                <th>Valla Invicta</th>
+                <th>Goles Recibidos</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- Tarjetas -->
+<div class="tab-pane fade" id="tarjetas">
+    <table class="table table-hover" id="tabla-tarjetas">
+        <thead class="table-dark">
+            <tr>
+                <th>Pos</th>
+                <th>Jugador</th>
+                <th>Selección</th>
+                <th>Amarillas</th>
+                <th>Rojas</th>
+                <th>Partidos</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<!-- Ranking FIFA -->
+<div class="tab-pane fade" id="ranking">
+    <table class="table table-hover" id="tabla-ranking">
+        <thead class="table-dark">
+            <tr>
+                <th>Pos</th>
+                <th>Selección</th>
+                <th>Puntos FIFA</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+        
+        </div>
+</div>
+   <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2026 FIFA World Cup • Proyecto con HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
+<script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/datos.js"></script>
+    <script src="/js/estadisticas.js"></script>
+</body>
+</html>

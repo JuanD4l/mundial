@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario - FIFA World Cup 2026</title>
+    
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/p.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        .team-card {
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0, 51, 160, 0.3);
+        }
+        .team-card.active {
+            border: 4px solid #0033A0;
+            background-color: #f0f4ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">FIFA WORLD CUP 2026</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="grupos.html">Grupos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="calendario.html">Calendario</a></li>
+<li class="nav-item"><a class="nav-link" href="/op2.html/esta.html">Estadísticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/op2.html/noti.html">Noticias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5 pt-5">
+        <h1 class="text-center mb-5">Calendario FIFA World Cup 2026</h1>
+
+        <!-- Filtros -->
+        <div class="row g-3 mb-5">
+            <div class="col-md-4">
+                <input type="text" id="search-team" class="form-control" placeholder="Buscar selección...">
+            </div>
+            <div class="col-md-3">
+                <select id="group-filter" class="form-select">
+                    <option value="">Todos los Grupos</option>
+                    <option value="A">Grupo A</option>
+                    <option value="B">Grupo B</option>
+                    <!-- Agrega más grupos según necesites -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Selector de Selecciones -->
+        <h4 class="mb-4">Selecciona tu selección</h4>
+        <div id="team-selector" class="row g-4 mb-5"></div>
+
+        <!-- Panel Próximo Partido -->
+        <div id="next-match-panel" class="card shadow mb-5" style="display: none;">
+            <div class="card-header bg-primary text-white">
+                <h5 id="panel-title"></h5>
+            </div>
+            <div class="card-body" id="next-match-content"></div>
+        </div>
+
+        <!-- Lista de Partidos -->
+        <h4 class="mb-4">Partidos de la Selección</h4>
+        <div id="matches-container" class="row g-4"></div>
+    </div>
+  <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2026 FIFA World Cup • Proyecto con HTML, CSS y JavaScript</p>
+        </div>
+    </footer>
+<script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/datos.js"></script>
+    <script src="/js/calendario.js"></script>
+</body>
+</html>
